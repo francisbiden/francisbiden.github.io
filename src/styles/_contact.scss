@@ -1,0 +1,108 @@
+
+
+    .contact{
+       width: 100vw;
+       height:auto;
+       justify-content: center;
+       align-items: center;
+       overflow: hidden;
+       color:$text-color ;
+       background-size: cover;
+       background-color: $background-color;
+
+        &-title{
+            padding: 0.5rem;
+            margin-left: 30vw;
+            font-size: 4rem;
+        }
+    
+        &-intro{
+            padding: 1rem;
+            margin: 0.5rem 3rem;
+            line-height: 2;
+        }
+    
+        .contact-btns{
+            .cta-bt{
+                padding: 1rem;
+                margin: 0.3rem 6rem;
+                border: none;
+                border-radius: 20px;
+                width: 12rem;
+                background-color: $secondary-color;
+                color: $text-color;
+                font-size: 1rem;
+                font-weight: bold;
+    
+            }
+        }
+
+    
+      
+    }
+
+    
+
+
+.contact-info{
+    width: 100vw;
+    padding:0 auto ;
+    margin: 0rem;
+    padding-left: 30%;
+    color:$text-color ;
+    background-color: $background-color;
+
+    &--div{
+        padding: 1.4rem;
+
+        .sp{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+    }
+    
+}
+
+.email{
+    width: 100vw;
+    color:$text-color ;
+    background-color: $background-color;
+    overflow: hidden;
+    line-height: 2;
+    padding: 0 30vw;
+    justify-content: center;
+    
+
+    &-me{
+        margin-left: 10rem;
+    }
+    .form{
+        padding: 0.3rem;
+        &-input{
+            padding: 0.5rem;
+            margin: 0.5rem;
+            width: 28rem;
+            height: auto;
+        }
+        &-text{
+            padding: 0.5rem;
+            margin: 0.5rem;
+            height: 1rem;
+            width: 28rem;
+            height: auto;
+        }
+
+        .btn{
+            padding: 0.6rem;
+            margin: 0.3rem 10rem;
+            border: none;
+            border-radius: 20px;
+            width: 12rem;
+            background-color: $primary-color;
+            color: $background-color;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+
+}

@@ -1,0 +1,88 @@
+@import 'variables';
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $background-color;
+    padding: 20px 80px;
+
+   &-span{
+        color: $primary-color;
+    }
+
+    #navbar{
+      justify-content: center;  
+      display: flex ; // Ensure it shows up
+      font-size: 2rem;
+      position: relative;
+      top: 1rem;
+      right: 1.5rem;
+      cursor: pointer;
+      color: $text-color;
+      background: none;
+      border: none;
+      align-items: center;
+
+
+        li{
+            list-style: none;
+            padding: 0 20px;
+            position: relative;
+
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: $text-color;
+             @include transition-ease;
+
+            &:hover,&.active{
+                color: $primary-color;
+            }
+
+            &:hover::after,&.active::after{
+                content: "";
+                width: 30%;
+                height: 2px;
+                background-color: $secondary-color;
+                position: absolute;
+                bottom: -4px;
+                left: 20px;
+            }
+        }
+
+       
+    }
+
+          // Toggle Button (Hidden by Default)
+
+  &__toggle {
+    width: 40px;
+    height: 40px;
+    display: none; // Hide by default
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000; // Ensure it's above the menu
+
+    
+
+    .navbar__icon {
+      color: $text-color;
+      font-size: 1.8rem;
+      
+    }
+  }
+}
+
+
+
+
+
+
+

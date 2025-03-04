@@ -1,0 +1,68 @@
+@import './home'; 
+@import './variables';
+@import './navbar';
+@import './contact';
+@import './skills';
+@import './about';
+@import './responsive';
+
+
+
+
+body{
+    font-family: $font-stack;
+    height: 100vh;
+    line-height: 1;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+.social-icons{
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+
+
+  a{
+      padding: 0.4rem;
+      @include transition-ease;
+
+      &:hover{
+          color: $primary-color;
+      }
+  }
+
+     
+}
+.social-icon{
+  position: fixed;
+  background-color: $background-color;
+  width: 100vw;
+  height: 2rem;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 3rem;
+
+
+
+
+  a{
+      padding: 0.4rem;
+      @include transition-ease;
+
+      &:hover{
+          color: $primary-color;
+      }
+  }
+
+     
+}
+
+
+
+
+
+

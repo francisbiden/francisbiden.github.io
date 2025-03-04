@@ -1,0 +1,65 @@
+@import './variables';
+
+
+
+
+.home{
+    height: 100vh;
+    background-color: $background-color;
+    color:$text-color ;
+    padding-top: 15vh;
+    padding-right: 40vw;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+
+    .img{
+        width: 24rem;
+        height: 24rem;
+        position: absolute;
+        right: 7vw;
+        border-radius: 50%;
+        border: 4px solid $background-color;
+        box-shadow: 5px 10px 15px rgba(198, 246, 5, 0.4);
+    }
+
+    &-name{
+        font-size: 4rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        border-bottom:  2px solid $text-color ;
+
+        &--last{
+            color: $primary-color;
+            font-weight: 700;
+        }
+    }
+
+    .tagline{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+    }
+    .intro{
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta-buttons{
+        margin: 1rem;
+        padding: 1rem;
+
+        .cta-bt{
+            padding: 1rem;
+            margin: 2rem 4rem;
+            border: none;
+            border-radius: 20px;
+            width: 12rem;
+            background-color: $secondary-color;
+            color: $text-color;
+            font-size: 1rem;
+            font-weight: bold;
+
+        }
+    }
+}

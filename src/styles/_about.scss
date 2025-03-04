@@ -1,0 +1,35 @@
+.about {
+    background-color: $secondary-color; 
+    color: $text-color; 
+    padding: 4rem 2rem;
+    text-align: center;
+    height: 100vh;
+  
+    .about-container {
+      max-width: 800px;
+      margin: 4rem auto;
+  
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #1e293b; // Dark blue heading
+      }
+  
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+  
+      .highlight {
+        color: #007bff; // Blue highlight for key details
+        font-weight: bold;
+      }
+    }
+
+   
+  }
+
+
+  

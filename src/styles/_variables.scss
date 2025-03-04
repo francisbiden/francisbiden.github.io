@@ -1,0 +1,51 @@
+$primary-color: #f0490c;
+$secondary-color: #2ecc71;
+$background-color: #090808;
+$text-color: #ffffff;
+$font-stack: 'Arial', sans-serif;
+$menu-bg: rgba(255, 255, 255, 0.95);
+$menu-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+
+// Define breakpoints
+$mobile: 576px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+
+  @mixin transition-ease{
+    transition:all 0.5s ease-in-out;
+  }
+
+  .social-icons {
+    color: #4a5568; // Equivalent to Tailwind's text-gray-700
+    font-size: 30px; // Equivalent to size={30}
+  
+    transition: color 0.3s ease-in-out; // Equivalent to duration-300
+  
+    &:hover {
+      color: #000; // Turns black on hover (Equivalent to hover:text-black)
+    }
+  }
+
+
+
+
+
+.footer{
+  position: fixed;
+  font-size: 1rem;
+  bottom: 0.5rem;
+  right: 1rem;
+  text-align: right;
+  padding: 1rem;
+  color: $primary-color;
+  
+}

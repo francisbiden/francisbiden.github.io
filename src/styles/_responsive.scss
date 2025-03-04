@@ -1,0 +1,232 @@
+@import './variables';
+
+//destop/latops and large screens
+
+
+//laptops
+@media screen and (max-width: 992px) {
+  .navbar{
+    position: relative;
+    overflow: hidden;
+    
+    &__toggle {
+      display: none !important;
+     
+    }
+
+    &__menu{
+      display: flex !important;
+     
+    }
+  
+  }
+
+  .home{
+ 
+    img{
+      display: block !important;
+      margin: 10rem auto;      
+  
+    }
+    .cta-buttons{
+      padding: 0;
+      margin: 0;
+      position: relative;
+      .cta-btn{
+        margin: 1.2rem;
+        padding: 1rem;
+        width: 6rem;
+      }
+    }
+
+  }
+
+
+  .about{
+    padding: 0;
+    overflow: hidden;
+    p{
+      color: $text-color;
+    }
+    
+  }
+
+  .skill{
+    height: 100vh;
+    width: 100vw;
+    color:$background-color ;
+    background-color: $text-color;
+    .skills{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 2rem 25vh;
+
+      &-card {
+        background-color: $background-color;
+      }
+     
+    }
+  }
+
+  .contact{
+    width: 100vw;
+ 
+  }
+  
+  .email{
+    background: $background-color;
+    color: $text-color;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20vw;
+  }
+
+  .contact-info{
+    background: $background-color;
+    color: $text-color;
+  }
+
+
+}
+
+
+  // Responsive for tablets (≤ 768px)
+  @media screen and (max-width: 768px) {
+    .navbar{
+      position: relative;
+      overflow: hidden;
+      
+      &__toggle {
+        display: flex !important;
+        font-size: 2rem;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        cursor: pointer;
+        color: $text-color;
+        background: none;
+        border: none;
+        z-index: 1001;
+      }
+  
+      &__menu{
+        position: absolute;
+        top:60px;
+        right:-100%;
+        background-color: $background-color;
+        width: 30rem;
+        height:auto;
+        opacity: 0;
+       &.open { 
+        right:0;
+        opacity:1;
+            
+        } 
+
+        
+      }
+  
+    }
+
+    .home{
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 80%;
+      padding: 0 3rem;
+      height: 100vh;
+      width: 100vw;
+
+      h2{
+        margin-top: 11rem;
+      }
+
+      img{
+        //display: none !important;
+        padding: 5rem;
+        position: absolute;
+        transform: translate(-4rem,-3rem);
+        margin-top: -7rem;
+        right: 3vw;
+        border-radius: 50%;
+        border: 1px solid $background-color;
+    
+      }
+      .cta-buttons{
+        padding: 0;
+        margin: 0;
+        position: relative;
+        .cta-bt{
+          margin: 1rem;
+          padding: 1rem;
+          width: 6rem;
+        }
+      }
+
+    }
+
+    footer{
+      font-size: 0.8rem;
+      transform:rotate(90deg) translate(-6rem,-8rem);
+      color: $primary-color;
+    }
+
+    .social-icons{
+      color: $text-color;
+    }
+
+    .about{
+      padding: 0;
+      overflow: hidden;
+      p{
+        color: $text-color;
+      }
+      
+    }
+
+    .skill{
+      height: 100vh;
+      width: 100vw;
+      color:$background-color ;
+      background-color: $text-color;
+      .skills{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem 30vw;
+
+        &-card {
+          background-color: $background-color;
+        }
+       
+      }
+    }
+
+    .contact{
+      width: 100vw;
+   
+    }
+    
+    .email{
+      background: $background-color;
+      color: $text-color;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10vw;
+    }
+
+    .contact-info{
+      background: $background-color;
+      color: $text-color;
+    }
+   
+  }
+
+
+
+
+
+
+
+
